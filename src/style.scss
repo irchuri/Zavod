@@ -1,70 +1,42 @@
+// src/style.scss
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
-  color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  --color-bg: #dadada;
+  --color-text: #000000;
+  --color-accent: #ff4c4c;
+  --color-primary: #007acc;
+  --font-main: 'Work Sans', sans-serif;
+  --font-alt: 'Fira Code', sans-serif;
 }
 
 body {
   margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
-  background-color: inherit;
-  font-family: inherit;
+  padding: 0;
+  font-family: var(--font-main);
+  background-color: var(--color-bg);
+  color: var(--color-text);
 }
 
-
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+h1, h2, h3 {
+  font-weight: 700;
+  color: var(--color-text);
+  font-family: var(--font-alt);
 }
 
-nav {
-  display: flex;
-  gap: 1rem;
-  justify-content: center;
-  margin-bottom: 2rem;
-
-  a {
-    color: #ccc;
-    font-weight: bold;
-    &:hover {
-      color: white;
-    }
+a {
+  color: var(--color-primary);
+  text-decoration: none;
+  &:hover {
+    color: var(--color-accent);
   }
 }
 
-@media (prefers-color-scheme: light) {
-  :root {
-    color: #213547;
-    background-color: #ffffff;
-  }
-
-  nav a {
-    color: #444;
-    &:hover {
-      color: #000;
-    }
-  }
+.material-icons {
+  vertical-align: middle;
+  font-size: 1.2em;
 }
-main {
-  border: 1px solid red;
-  padding: 1rem;
-  color: white !important;
-  background-color: #333;
+.navbar {
+  background-color: var(--color-bg);
+  border-bottom: 1px solid var(--color-accent);
+  padding: 10px;
+  font-family: var(--font-alt)
 }
-.test-rem {
-  font-size: 32px;
-  margin: 16px;
-}
-
