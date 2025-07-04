@@ -21,21 +21,21 @@ const routes: RouteRecordRaw[] = [
     component: Contacts
   }
   ,
-  { path: '/news',
-    component: News
-  },
-  {
-    path: '/partnership',
-    component: Partnership
-  },
+  // { path: '/news',
+  //   component: News
+  // },
+  // {
+  //   path: '/partnership',
+  //   component: Partnership
+  // },
   {
     path: '/products',
     component: Products
   },
-  {
-    path: '/technologies',
-    component: Technologies
-  }
+  // {
+  //   path: '/technologies',
+  //   component: Technologies
+  // }
 
 ]
 
